@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Please, fill the form</h2>
+
+    <form method="POST" action="https://formspree.io/oksankapl17@gmail.com">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label>Enter your email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+        <label for="favorite_perfumes">Favorite brands: </label>
+        <select id="favorite_perfumes" name="favorite_perfumes">
+            <option value="Lancome">Lancome</option>
+            <option value="Chanel" selected>Chanel</option>
+            <option value="Hermes">Hermes</option>
+            <option value="Armani">Armani</option>
+        </select>
+        <br><br>
+        <p>Do you like Lancome perfums?</p>
+        <input type="checkbox" name="yes" value="yes">Yes
+        <br><br>
+        <input type="checkbox" name="no" value="no">No
+        <br><br>
+        <p>Your favourite Lancome perfums</p>
+        <input type="radio" name="perfum" value="tresor" checked> Tresor<br>
+        <input type="radio" name="perfum" value="la vie est belle"> La vie est Belle<br>
+        <input type="radio" name="perfum" value="Poeme"> Poeme<br>
+        <input type="radio" name="perfum" value="other"> Other<br><br>
+
+        <label>Enter your phone number:</label>
+        <input type="tel" name="number" pattern="[+][0-9]{12}" placeholder="+380671234567">
+        <br><br>
+        
+        <textarea name="message" rows="5" cols="30">Please, enter your question...
+         </textarea>
+         <br><br>
+        <input type="submit">
+
+
+    </form>
+
+
+</body>
+
+</html>
